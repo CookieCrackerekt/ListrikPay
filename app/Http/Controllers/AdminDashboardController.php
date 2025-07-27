@@ -33,7 +33,6 @@ class AdminDashboardController extends Controller
      */
     public function index()
     {
-        $judul = "Beranda";
         return view('admin.v_beranda.index', [
             'judul' => 'Dashboard Admin',
             'jumlah_pelanggan' => Pelanggan::count(),
