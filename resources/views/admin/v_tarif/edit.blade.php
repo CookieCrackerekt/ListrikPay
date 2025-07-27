@@ -11,7 +11,7 @@
                         <div class="card-body">
                             <h4 class="card-title">{{ $judul }}</h4>
                             <div class="form-group">
-                                <label>Daya (Watt)</label>
+                                <label>Daya (VA)</label>
                                 <input type="number" name="daya" value="{{ old('daya', $edit->daya) }}"
                                     class="form-control @error('daya') is-invalid @enderror"
                                     placeholder="Masukkan daya dalam Watt">
