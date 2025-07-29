@@ -41,27 +41,6 @@ class TagihanController extends Controller
     }
 
     /**
-     * Menyimpan data tagihan baru ke database.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\RedirectResponse
-     */
-    public function store(Request $request)
-    {
-        $request->validate([
-            'id_penggunaan' => 'required',
-            'id_pelanggan' => 'required',
-            'bulan' => 'required',
-            'tahun' => 'required',
-            'jumlah_meter' => 'required|numeric',
-            'status' => 'required'
-        ]);
-
-        Tagihan::create($request->all());
-        return redirect()->route('tagihan.index');
-    }
-
-    /**
      * Menampilkan form edit tagihan berdasarkan ID.
      * Sekaligus memuat data relasi penggunaan, pelanggan, dan tarif.
      *

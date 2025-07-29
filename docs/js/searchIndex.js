@@ -206,11 +206,6 @@ Search.appendIndex(
             "summary": "Menampilkan\u0020semua\u0020data\u0020tagihan\u0020listrik\u0020beserta\u0020data\u0020pelanggan.",
             "url": "classes/App-Http-Controllers-TagihanController.html#method_index"
         },                {
-            "fqsen": "\\App\\Http\\Controllers\\TagihanController\u003A\u003Astore\u0028\u0029",
-            "name": "store",
-            "summary": "Menyimpan\u0020data\u0020tagihan\u0020baru\u0020ke\u0020database.",
-            "url": "classes/App-Http-Controllers-TagihanController.html#method_store"
-        },                {
             "fqsen": "\\App\\Http\\Controllers\\TagihanController\u003A\u003Aedit\u0028\u0029",
             "name": "edit",
             "summary": "Menampilkan\u0020form\u0020edit\u0020tagihan\u0020berdasarkan\u0020ID.",
