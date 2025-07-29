@@ -126,16 +126,13 @@ class PenggunaanController extends Controller
                 },
             ],
         ]);
-
         $penggunaan->update([
             'tahun' => $request->tahun,
             'bulan' => $request->bulan,
             'meter_awal' => $meter_awal,
             'meter_akhir' => $request->meter_akhir,
         ]);
-
         $jumlah_meter = $request->meter_akhir - $meter_awal;
-
         Tagihan::create([
             'id_penggunaan' => $penggunaan->id_penggunaan,
             'id_pelanggan' => $penggunaan->id_pelanggan,
