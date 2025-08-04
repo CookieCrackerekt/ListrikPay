@@ -9,9 +9,8 @@
 
 ## About Listrik Pay
 
-Listrik Pay adalah aplikasi pembayaran listrik pasca bayar yang menggunakan laravel. untuk menginstallya jalankan:
-1.php artisan migrate:fresh --seed
-2.php artisan serve
+Listrik Pay adalah aplikasi pembayaran listrik pasca bayar yang menggunakan laravel. untuk menjalankan:
+1.ubah koneksi database di file .env -> 2.php artisan migrate:fresh --seed -> 3.php artisan serve
 untuk melihat hasil generate dokumentasi phpDocumentor ada di folder docs/index.html
 
 ## About me
