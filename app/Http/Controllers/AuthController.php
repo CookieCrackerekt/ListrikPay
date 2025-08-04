@@ -5,8 +5,6 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
-use App\Models\Pelanggan;
-use App\Models\Tarif;
 
 /**
  * Controller untuk menangani proses autentikasi pelanggan dan admin.
@@ -29,8 +27,7 @@ class AuthController extends Controller
      */
     public function showLoginForm()
     {
-        $tarif = Tarif::all();
-        return view('pelanggan.v_login.loginregister', compact('tarif'));
+        return view('pelanggan.v_login.loginregister');
     }
 
     /**
@@ -67,35 +64,6 @@ class AuthController extends Controller
         }
 
         return back()->withErrors(['username' => 'Username atau password salah'])->withInput();
-    }
-
-    /**
-     * Memproses registrasi pelanggan baru.
-     *
-     * @param \Illuminate\Http\Request $request
-     * @return \Illuminate\Http\RedirectResponse
-     */
-    public function registerPelanggan(Request $request)
-    {
-        $request->validate([
-            'username' => 'required|unique:pelanggan',
-            'password' => 'required|confirmed',
-            'nomor_kwh' => 'required|digits:20|unique:pelanggan',
-            'id_tarif' => 'required|exists:tarif,id_tarif',
-            'nama_pelanggan' => 'required|string|max:100',
-            'alamat' => 'required|string',
-        ]);
-
-        Pelanggan::create([
-            'username' => $request->username,
-            'password' => Hash::make($request->password),
-            'nomor_kwh' => $request->nomor_kwh,
-            'id_tarif' => $request->id_tarif,
-            'nama_pelanggan' => $request->nama_pelanggan,
-            'alamat' => $request->alamat,
-        ]);
-
-        return redirect()->route('login')->with('success', 'Registrasi berhasil! Silakan login.');
     }
 
     /**

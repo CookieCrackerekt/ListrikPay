@@ -31,11 +31,6 @@ Search.appendIndex(
             "summary": "Memproses\u0020login\u0020admin.",
             "url": "classes/App-Http-Controllers-AuthController.html#method_loginAdmin"
         },                {
-            "fqsen": "\\App\\Http\\Controllers\\AuthController\u003A\u003AregisterPelanggan\u0028\u0029",
-            "name": "registerPelanggan",
-            "summary": "Memproses\u0020registrasi\u0020pelanggan\u0020baru.",
-            "url": "classes/App-Http-Controllers-AuthController.html#method_registerPelanggan"
-        },                {
             "fqsen": "\\App\\Http\\Controllers\\AuthController\u003A\u003Alogout\u0028\u0029",
             "name": "logout",
             "summary": "Logout\u0020pengguna\u0020\u0028baik\u0020pelanggan\u0020maupun\u0020admin\u0029.",
