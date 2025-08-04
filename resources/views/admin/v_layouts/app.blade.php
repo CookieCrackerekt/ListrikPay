@@ -52,9 +52,7 @@
                                 class="light-logo" /> </b>
                         <!--End Logo icon -->
                         <!-- Logo text -->
-                        <span class="logo-text"> <!-- dark Logo text --> <img
-                                src="{{ asset('backend/assets/images/logo-text.png') }}" alt="homepage"
-                                class="light-logo" />
+                        <h3>LISTRIK PAY</h3>
                         </span>
                         <!-- Logo icon -->
                         <!-- <b class="logo-icon"> -->

@@ -83,7 +83,7 @@ class PenggunaanController extends Controller
             'status' => 'belum bayar',
         ]);
 
-        return redirect()->route('penggunaan.index')->with('success', 'Data penggunaan berhasil disimpan');
+        return redirect()->route('penggunaan.index')->with('success', 'Data penggunaan berhasil disimpan dan Data Tagihan ditambahkan');
     }
 
     /**
